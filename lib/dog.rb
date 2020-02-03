@@ -1,26 +1,12 @@
 class Dog 
 
-@@all = []
   
-  def initialize(name, breed)
-    @name = name
-    @breed = breed
-    @@all << self 
-  end 
-
-  def self.all 
-    @@all
-  end 
-
-  
-  def name=(full_name)
-    breed_name, name = full_name.split
-    @name = name
-    @breed = breed_name
+  def name=(dog_name)
+   @name = dog_name
   end
     
   def name
-    "#{name} #{breed_name}".strip
+    puts "#{name}"
   end 
 
 end 
