@@ -8,19 +8,19 @@ class Dog
     @@all << self 
   end 
 
-def self.all 
-  @@all
-end 
-  
-  def name
-    @name 
+  def self.all 
+    @@all
   end 
+
   
   def name=(full_name)
     breed_name, name = full_name.split
     @name = name
     @breed = breed_name
   end
-  
+    
+  def name
+    @name 
+  end 
 
 end 
