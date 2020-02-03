@@ -3,7 +3,6 @@ class Dog
   
   def initialize(name, breed)
     @name = name
-    @breed = breed
     @@all << self 
   end 
   
@@ -11,11 +10,8 @@ class Dog
     @@all 
   end 
   
-  def name=(name)
-    @name = name 
+  def name
+    @name 
 end 
 
-def name 
-  "#{name}"
-end 
 end 
