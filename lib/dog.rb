@@ -16,15 +16,11 @@ end
     @name 
   end 
   
-  def name=(new_name)
-    @name = new_name
+  def name=(full_name)
+    breed_name, name = full_name.split
+    @name = name
+    @breed = breed_name
   end
   
-  def breed
-    @breed
-  end 
-  
-  def breed=(breed_name)
-    @breed = breed_name
-  end 
+
 end 
