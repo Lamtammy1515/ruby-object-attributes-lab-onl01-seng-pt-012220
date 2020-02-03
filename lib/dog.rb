@@ -11,7 +11,7 @@ class Dog
     @@all 
   end 
   
-  def name=(full_name)
+  def name=(name)
     @name = name 
 end 
 
