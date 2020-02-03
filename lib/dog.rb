@@ -10,5 +10,12 @@ class Dog
   def self.all 
     @@all 
   end 
+  
+  def name=(full_name)
+    @name = name 
+end 
 
+def name 
+  "#{name}"
+end 
 end 
